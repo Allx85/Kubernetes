@@ -12,3 +12,7 @@ kubectl apply -f filnamn <-- deployment med *.yaml*
 curl -s 127.0.0.1:32650 <-- testa
 
 kubectl get pods -o wide <-- kollar vilken nod pods ligger på
+
+kubectl autoscale deployment bar-app --min=1 --max=5 --cpu=50% <-- sätter autoscaling på bar-app från minst 1 till max 5 och det sker vid 50% CPU användning
+
+kubectl get hpa <-- visar inställningar för Horizontal Pod Autoscaler
