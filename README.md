@@ -3,6 +3,20 @@
 ## Installation
 [Kubernetes-install](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/)
 
+## Utförande
+
+* Installera kubernetes
+
+* Förstå pods och Deployment
+
+* Skapa en deployment YAML
+
+* Skala upp med flera pods
+
+* Distribuera pods på olika noder med ALB
+
+
+
 kind create cluster --name labb --config cluster.yaml <-- skapa ett cluster med yaml
 
 kubectl create deployment nginx --image=nginx --replicas=2  <-- skapar 2 pods som kör nginx
